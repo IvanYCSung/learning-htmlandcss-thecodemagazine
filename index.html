@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--lang="en" language of this webpage is set to English-->
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+    <meta> = metadata
+    charset let browsers and search engines konw how the charactors set in order to render the charactors.
+    -->
+    <link href="style.css" rel="stylesheet" />
+    <!--<link> = to link CSS file-->
+    <title>The Basic Language of The Web: HTML</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--for centering purpose-->
+      <header class="main-header clearfix">
+        <h1>📘 The Code Magazine</h1>
+        <!--only one h1 per page-->
+        <nav>
+          <a href="blog.html">Blog</a>
+          <!-- the hyperlink goes to interal webpage -->
+          <a href="#">Challenges</a>
+          <!-- # is a blank link, going back to the top of the current page-->
+          <a href="flexbox.html">Flexbox</a>
+          <a href="css-grid.html">CSS Grid</a>
+        </nav>
+        <!-- <nav> = navigation, to group navigation links for search engines in order to make users to have your website details in the search results -->
+        <!-- <div class="clear"></div> 
+        clear the impact caused by float element, easy to fix but not to use -->
+      </header>
+
+      <!-- for flexbox layout only <div class="row"> -->
+      <article>
+        <header class="post-header">
+          <h2>The Basic Language of The Web: HTML</h2>
+
+          <div class="author-box">
+            <img
+              src="img/laura-jones.jpg"
+              alt="headshot of Laura Jones"
+              width="50"
+              height="50"
+              class="author-img"
+            />
+
+            <p id="author" class="author">
+              Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+            </p>
+            <!--<b> is used in the old version of HTML, but it works the same way as <strong>-->
+          </div>
+
+          <img
+            src="img/post-img.jpg"
+            alt="HTML code on a screen"
+            width="500"
+            height="200"
+            class="post-img"
+          />
+          <!--
+              <img> does not have any content, no close tag is required. Attributes are used with <img>
+              
+              src = source
+              alt = alternative text. Always use it in img for search engines to know what your website is about. Also, it is used for blind people when they cannot read webpages and screen reader can read it out for them.
+            -->
+        </header>
+
+        <p>
+          All modern websites and web applications are built using three
+          <em>fundamental</em>
+          <!--<i> is used in the old version of HTML, but it works the same way as <em>-->
+          technologies: HTML, CSS and JavaScript. These are the languages of the
+          web.
+        </p>
+
+        <p>
+          In this post, let's focus on HTML. We will learn what HTML is all
+          about, and why you too should learn it.
+        </p>
+
+        <h3>What is HTML?</h3>
+
+        <p>
+          HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+          <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+          language that web developers use to structure and describe the content
+          of a webpage (not a programming language).
+        </p>
+
+        <p>
+          HTML consists of elements that describe different types of content:
+          paragraphs, links, headings, images, video, etc. Web browsers
+          understand HTML and render HTML code as websites.
+        </p>
+
+        <p>In HTML, each element is made up of 3 parts:</p>
+
+        <ol>
+          <li>The opening tag</li>
+          <li>The closing tag</li>
+          <li>The actual element</li>
+        </ol>
+        <!--
+          <ol> = order list (parent element)
+            <li> = list item (child element)
+            -->
+
+        <p>
+          You can learn more at the
+          <a
+            href="https://developer.mozilla.org/en-US/docs/web/html"
+            target="_blank"
+            >MDN Web Docs</a
+          >
+          <!--
+        <a> = anchor
+        attribute href used for hyperlinks
+        attribute target makes users to open the link in a new window.
+        --></p>
+
+        <h3>Why should you learn HTML?</h3>
+        <p>
+          There are countless reasons for learning the fundamental language of
+          the web. Here are 5 of them:
+        </p>
+        <ul>
+          <li>To be able to use the fundamental web dev language</li>
+          <li>
+            To hand-craft beautiful websites instead of relying on tools like
+            Worpress or Wix
+          </li>
+          <li>To build web applications</li>
+          <li>To impress friends</li>
+          <li>To have fun 😃</li>
+        </ul>
+        <!--
+      <ul> = unorder list (parent element)
+      <li> = list item (child element)
+      -->
+
+        <p>Hopefully you learned something new here. See you next time!</p>
+      </article>
+
+      <aside>
+        <h4>Related posts</h4>
+        <ul class="related">
+          <li class="related-post">
+            <img
+              src="img/related-1.jpg"
+              alt="How to Learn Web Development"
+              width="75"
+              height="75"
+            />
+            <div>
+              <a href="#" class="related-link">How to Learn Web Development</a>
+              <p class="related-author">By Jonas Schmedtmann</p>
+            </div>
+          </li>
+          <li class="related-post">
+            <img
+              src="img/related-2.jpg"
+              alt="The Unknown Powers of CSS"
+              width="75"
+              height="75"
+            />
+            <div>
+              <a href="#" class="related-link">The Unknown Powers of CSS</a>
+              <p class="related-author">By Jim Dillon</p>
+            </div>
+          </li>
+          <li class="related-post">
+            <img
+              src="img/related-3.jpg"
+              alt="Why Javascript is Awesome"
+              width="75"
+              height="75"
+            />
+            <div>
+              <a href="#" class="related-link">Why Javascript is Awesome</a>
+              <p class="related-author">By Matilda</p>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <!-- for flexbox layout only </div> -->
+
+      <!-- 
+    <aside> = secondary information of the main article
+     -->
+
+      <footer>
+        <p id="copyright" class="copyright text">
+          Copyright &copy; 2027 by The Code Magazine.
+        </p>
+      </footer>
+    </div>
+
+    <button>♥ Like</button>
+  </body>
+</html>
